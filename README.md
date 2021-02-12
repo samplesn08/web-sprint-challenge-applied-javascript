@@ -7,7 +7,7 @@ This challenge allows you to practice the concepts and techniques learned over t
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
 You are not allowed to collaborate during the sprint challenge. However, you are encouraged to follow the twenty-minute rule and seek support by dropping a :wave: in your help channel when needed.
-
+ 
 ## Introduction
 
 You are going to create a Lambda Newspaper. Your job is going to be to create the components that make up the newspaper's home page.
@@ -75,7 +75,12 @@ There are two possible ways to submit this project to Canvas. Lambda Staff will 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
+The DOM is an interface for viewing a web page.  By manipulating the DOM, developers can use Javascript to alter a web page without altering the HTML file
 2. What is an event?
+An event is any occurance on - or user interaction with - a page, such as a click or a mouseover or the page loading
 3. What is an event listener?
+Developers can add an event listener to run a block of code upon an event happening
 4. Why would we convert a NodeList into an Array?
+Because a NodeList is an array-like, and not an Array, which means we are unable to use Array methods on a NodeList.  So if we want to .filter a NodeList, for instance, it must first be converted to an Array
 5. What is a component?
+A component is a contained bit of HTML, CSS, and Javascript that interacts together to make a feature on a web page, such as populating a list of news articles or a gallery of photos after clicking a button.
