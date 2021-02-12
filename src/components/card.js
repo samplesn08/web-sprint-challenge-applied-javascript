@@ -19,25 +19,33 @@ const Card = (article) => {
   //   </div>
   // </div>
   //
+  
+  //card
   const card = document.createElement('div');
   card.classList.add('card');
+  //headline
   const headline = document.createElement('div');
   headline.classList.add('headline');
   headline.textContent = article.headline;
   card.appendChild(headline);
+  //author
   const author = document.createElement('div');
   author.classList.add('author');
   card.appendChild(author);
+  //imgContainer
   const imgContainer = document.createElement('div');
   imgContainer.classList.add('img-container');
   author.appendChild(imgContainer);
+  //img
   const img = document.createElement('img');
   img.setAttribute('src', article.authorPhoto);
   imgContainer.appendChild(img);
+  //name
   const name = document.createElement('span');
   name.textContent = `By ${article.authorName}`;
   author.appendChild(name);
-  
+
+  //event listener
   card.addEventListener('click', () => {
     console.log(article.headline);
   })
